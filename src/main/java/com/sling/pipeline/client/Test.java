@@ -24,6 +24,9 @@ public class Test {
         Node node5 = new Node(5L, "node5");
         Node node6 = new Node(6L, "node6");
         Node node7 = new Node(7L, "node7");
+        Node node8 = new Node(8L, "node8");
+        Node node9 = new Node(9L, "node9");
+        Node node10 = new Node(10L, "node10");
         dag.addNode(node1);
         dag.addNode(node2);
         dag.addNode(node3);
@@ -31,6 +34,9 @@ public class Test {
         dag.addNode(node5);
         dag.addNode(node6);
         dag.addNode(node7);
+        dag.addNode(node8);
+        dag.addNode(node9);
+        dag.addNode(node10);
         // init edge
         dag.addEdge(new Edge(node1, node2));
         dag.addEdge(new Edge(node1, node5));
@@ -39,6 +45,7 @@ public class Test {
         dag.addEdge(new Edge(node2, node4));
         dag.addEdge(new Edge(node4, node7));
         dag.addEdge(new Edge(node5, node7));
+        dag.addEdge(new Edge(node8, node9));
 
         System.out.println(GSON.toJson(dag));
 
